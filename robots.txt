@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webvortexx.github.io/dr-ajay-clinic/sitemap.xml
