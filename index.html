@@ -109,6 +109,18 @@
 .checklist svg{ width:20px; height:20px; color: var(--wa-deep); flex:0 0 auto; margin-top:2px; }
 
 @media (max-width: 820px){ .intro-grid{ grid-template-columns:1fr; } }
+
+/* patient reviews */
+.review-card{
+  background: var(--paper); border:1px solid var(--sage-line); border-radius: var(--radius);
+  padding: 1.6rem; box-shadow: var(--shadow); display:flex; flex-direction:column; gap:.9rem;
+}
+.review-card .stars{ display:flex; gap:.15rem; color: var(--amber); }
+.review-card .stars svg{ width:15px; height:15px; }
+.review-card .quote{ margin:0; color: var(--ink); font-size:.98rem; line-height:1.6; }
+.review-card .who{ display:flex; flex-direction:column; margin-top:auto; padding-top:.6rem; border-top:1px solid var(--sage-line); }
+.review-card .who b{ font-size:.92rem; color: var(--pine); font-family: var(--display); font-weight:600; }
+.review-card .who span{ font-size:.82rem; color: var(--ink-faint); }
 </style>
 </head>
 <body>
@@ -265,6 +277,56 @@
       <div class="stat"><b>Chronic &amp; acute</b><span>Everyday and long-standing cases</span></div>
       <div class="stat"><b>Individual</b><span>Remedy matched to your case</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<!-- PLACEHOLDER CONTENT — replace these three cards with real patient reviews. -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Patient reviews</p>
+      <h2>What patients say</h2>
+      <p>A few notes from people who've visited the clinic.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="review-card reveal">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+        </div>
+        <p class="quote">"Dr Ajay took the time to understand my whole history, not just the symptom. My skin has cleared up a lot over a few months of treatment."</p>
+        <div class="who"><b>Anita S.</b><span>Jabalpur</span></div>
+      </article>
+      <article class="review-card reveal">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+        </div>
+        <p class="quote">"Booked on WhatsApp and got a slot the same week. Very patient with my son who was nervous about the visit."</p>
+        <div class="who"><b>Rohit K.</b><span>Garha, Jabalpur</span></div>
+      </article>
+      <article class="review-card reveal">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.7-4.9 4.5 1.3 6.5L12 16.9l-5.9 3.3 1.3-6.5-4.9-4.5 6.6-.7Z"/></svg>
+        </div>
+        <p class="quote">"Clear explanation of the treatment plan and realistic about timelines. My digestion issues have improved a lot."</p>
+        <div class="who"><b>Priya M.</b><span>Jabalpur</span></div>
+      </article>
+    </div>
+    <p class="center mt-lg reveal">
+      <a class="btn btn--ghost" href="https://maps.app.goo.gl/gETN5ZMWVegFKqZ66" target="_blank" rel="noopener">Read more reviews on Google Maps</a>
+    </p>
   </div>
 </section>
 
